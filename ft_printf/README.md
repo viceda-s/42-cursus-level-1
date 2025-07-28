@@ -79,7 +79,8 @@ Hello world! Int: 42, Hex: 2a
 | :-- | :-- |
 | `ft_printf.c` | Main implementation of `ft_printf` |
 | `ft_printf.h` | Header file with prototypes and macros |
-| `utils.c` | Helper functions for conversions and output |
+| `ft_printf_numbers.c` | Helper functions for conversions |
+| `ft_printf_utils.c` | Helper functions for output |
 | `Makefile` | Builds the project |
 
 *Add or modify files according to your repo structure.*
