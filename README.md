@@ -35,7 +35,6 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
     - Safe variadic argument handling.
     - Custom helper functions for number and hex conversions.
     - Defensive error handling and clear return values.
-- **Reference:** Key logic split across `ft_printf.c`, `ft_printf_numbers.c`, `ft_printf_utils.c`, and `ft_printf.h`.
 - **Skills:** Advanced function pointers, memory management, and modular code.
 
 
@@ -46,6 +45,9 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
     - Handles multiple file descriptors simultaneously.
     - Robust buffer management for efficient large file reading.
     - Prevents leaks and dangling pointers with thorough error checks and cleanups.
+- **Bonus:**
+    - Use of only one static variable;
+    - Manage multiple file descriptors at the same time.
 - **Skills:** Dynamic memory allocation, pointer arithmetic, file I/O at low level.
 
 
@@ -58,7 +60,14 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
 
 ## 📂 Repository Structure
 
-- Each project is in its own subdirectory with complete source code and, where needed, install/test instructions.
+- Each project is in its own subdirectory with complete source code and, where needed, install/test instructions:
+```
+42-cursus-level-1/
+│
+├── born2beroot/
+├── ft_printf/
+└── get_next_line/
+```
 
 
 ## 🚀 How to Explore
