@@ -1,4 +1,4 @@
-# Milestone 1 – Completed
+# Milestone 1 – Completed 🟢
 
 Welcome to my repository showcasing my progress in **Milestone 1** at 42 School. Below you’ll find a focused overview of each project, my precise results, and the technical highlights that set my submissions apart.
 
