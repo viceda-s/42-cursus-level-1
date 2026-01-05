@@ -13,9 +13,8 @@
 #ifndef FT_PRINTF_BONUS_H
 # define FT_PRINTF_BONUS_H
 
-# include <unistd.h>
 # include <stdarg.h>
-# include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_format
 {
