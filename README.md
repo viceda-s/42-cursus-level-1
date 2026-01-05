@@ -7,7 +7,7 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
 | Project | Final Score | Notable Features |
 | :-- | :--: | :-- |
 | Born2beroot | 🌟 125/100 | Netdata bonus service, Linux hardening |
-| ft_printf | ✅ 100/100 | Custom C printf, variadic functions |
+| ft_printf | 🌟 125/100 | Custom C printf, variadic functions |
 | get_next_line | 🌟 125/100 | Handles multiple FDs, efficient buffers |
 
 ## 🔎 Project Details
@@ -27,7 +27,7 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
 - **Skills:** Security by default, scripting, Linux admin best practices.
 
 
-### 🖨️ ft_printf – 100/100 ✅
+### 🖨️ ft_printf – 125/100 🌟
 
 - **Objective:** Implement a modular, robust version of the C `printf` function.
 - **Features:**
@@ -35,6 +35,10 @@ Welcome to my repository showcasing my progress in **Milestone 1** at 42 School.
     - Safe variadic argument handling.
     - Custom helper functions for number and hex conversions.
     - Defensive error handling and clear return values.
+- **Bonus:**
+    - Implemented all the following flags: `-0.# +` (minus, zero, width, precision, hash, space, plus).
+    - Complete flag combination handling for all conversion specifiers.
+    - Advanced formatting with field width and precision for numbers, strings, and hex values.
 - **Skills:** Advanced function pointers, memory management, and modular code.
 
 

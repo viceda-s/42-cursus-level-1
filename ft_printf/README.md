@@ -65,67 +65,33 @@ ft_printf("%.5s", "hello world")  // "hello"
 ft_printf("%.5d", 42)             // "00042"
 ```
 
-## Instructions
+## Installation & Usage
 
 ### Compilation
 
 The project includes a Makefile with the following targets:
 
-**Build Mandatory Part:**
 ```bash
-make
-```
-
-**Build with Bonus:**
-```bash
-make bonus
-```
-
-**Clean Object Files:**
-```bash
-make clean
-```
-
-**Full Clean (remove library and objects):**
-```bash
-make fclean
-```
-
-**Rebuild:**
-```bash
-make re
-make re_bonus
+make           # Build mandatory part
+make bonus     # Build with bonus features
+make clean     # Remove object files
+make fclean    # Remove library and objects
+make re        # Rebuild everything
 ```
 
 ### Installation
 
-1. Clone the repository:
+1. Clone and compile:
 ```bash
 git clone <repository_url>
 cd ft_printf
-```
-
-2. Compile the library:
-```bash
 make bonus
 ```
 
-3. The library `libftprintf.a` will be created in the project directory.
+2. The library `libftprintf.a` will be created.
 
-### Usage
+### Usage Example
 
-Include the header in your C program:
-```c
-#include "ft_printf.h"
-```
-
-Compile your program with the library:
-```bash
-gcc -Wall -Wextra -Werror my_program.c -L. -lftprintf -o my_program
-./my_program
-```
-
-### Basic Example
 ```c
 #include "ft_printf.h"
 
@@ -134,9 +100,14 @@ int main(void)
     ft_printf("Hello %s!\n", "World");           // Hello World!
     ft_printf("Number: %d\n", 42);                // Number: 42
     ft_printf("Hex: %#x\n", 255);                 // Hex: 0xff
-    ft_printf("Pointer: %p\n", &main);            // Pointer: 0x... 
+    ft_printf("Pointer: %p\n", &main);            // Pointer: 0x...
     return (0);
 }
+```
+
+Compile your program:
+```bash
+gcc -Wall -Wextra -Werror my_program.c -L. -lftprintf -o my_program
 ```
 
 ## 🛠️ Project Structure
@@ -159,65 +130,6 @@ int main(void)
 - `ft_printf_uint_bonus.c` - Unsigned integer formatting
 - `ft_printf_hex_bonus.c` - Hexadecimal formatting (< 25 lines ✅)
 
-## 📊 File Statistics
-
-| Metric | Value |
-|--------|-------|
-| Total Files | 13 (10 C files + 1 header + Makefile) |
-| Total Lines | ~800 |
-| Functions | 35+ |
-| Max lines per function | 25 (Norminette compliant) |
-| Norminette Status | ✅ 100% PASS |
-
-## 🚀 Compilation
-
-### Build Mandatory Part
-```bash
-make
-```
-
-### Build with Bonus
-```bash
-make bonus
-```
-
-### Clean Object Files
-```bash
-make clean
-```
-
-### Full Clean
-```bash
-make fclean
-```
-
-### Rebuild
-```bash
-make re
-make re_bonus
-```
-
-## 💻 Usage
-
-### Basic Example
-```c
-#include "ft_printf.h"
-
-int main(void)
-{
-    ft_printf("Hello %s!\n", "World");           // Hello World!
-    ft_printf("Number: %d\n", 42);                // Number: 42
-    ft_printf("Hex: %#x\n", 255);                 // Hex: 0xff
-    ft_printf("%.2f\n", 3.14);                    // (no float support)
-    return (0);
-}
-```
-
-### Compilation with Library
-```bash
-gcc -Wall -Wextra -Werror my_program.c -L. -lftprintf -o my_program
-./my_program
-```
 
 ## 🎓 Implementation Details
 
@@ -388,6 +300,20 @@ ft_printf("%p\n", &x);              // "0x7ffee... (address depends on system)"
 ft_printf("%p\n", NULL);            // "(nil)" (or "0x0" depending on implementation)
 ```
 
+## 📝 Behavior Notes
+
+### Return Value
+The function returns the total number of characters printed to stdout, excluding the null terminator (just like the real `printf`).
+
+### NULL Handling
+- `%s` with NULL pointer prints `(null)`
+- `%p` with NULL pointer prints `(nil)` or implementation-specific
+
+### Flag Combinations
+- `-` flag disables `0` flag padding
+- Precision with `d` means zero-padding
+- Multiple flags can be combined
+
 ## 🔧 Requirements Met
 
 ### Mandatory Part
@@ -457,17 +383,6 @@ ft_printf("%p\n", NULL);            // "(nil)" (or "0x0" depending on implementa
 **Development Approach:**
 The project was primarily developed through manual implementation, using official documentation and the 42 curriculum as primary references. AI tools were used as supplementary resources for documentation, code review suggestions, and learning alternative approaches, but all final implementation decisions and code were written manually to ensure deep understanding of the concepts.
 
-### Return Value
-The function returns the total number of characters printed to stdout, excluding the null terminator (just like the real `printf`).
-
-### NULL Handling
-- `%s` with NULL pointer prints `(null)`
-- `%p` with NULL pointer prints `(nil)` or implementation-specific
-
-### Flag Combinations
-- `-` flag disables `0` flag padding
-- Precision with `d` means zero-padding
-- Multiple flags can be combined
 
 ## 🎓 Learning Outcomes
 
