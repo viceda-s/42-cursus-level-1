@@ -396,9 +396,7 @@ This project teaches:
 
 ## 📞 Author
 
-**viceda-s** <viceda-s@student.42luxembourg.lu>
-
-42 School Luxembourg
+**viceda-s** - 42 Luxembourg
 
 ## 📄 License
 
